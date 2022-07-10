@@ -1,0 +1,33 @@
+.shops-header {
+    background-color: #00ffff;
+    padding: 10px;
+    margin: 0;
+}
+
+.shops-header h1 {
+    color: #f506f5;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.shops-header h2 {
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.shops-container {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: antiquewhite;
+    padding: 50px;
+}
+
+.cart-container {
+    background-color: aliceblue;
+}
