@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Header from '../Header/Header';
+import Product from '../Product/Product';
 import './Shops.css';
 
 const Shops = () => {
+    const [products, setProducts] = useState([]);
+
+    useEffect( () => {
+        fetch('product.json')
+        .then(res => res.json())
+        .then(data => setProducts(data));
+    }, [])
+
     return (
         <div>
-            <div className='shops-header'>
-                <h1>Table Chooser</h1>
-                <h2>Choose 4 Tables</h2>
-            </div>
-            <div className='.shops-container'>
+            <Header></Header>
+            <div className='shops-container'>
                 <div className='product-container'>
-                    <h2>This is Product section</h2>
+                    {
+                        products.map(product => <Product
+                        product={product}
+                        key={product.id}
+                        ></Product>)
+                    }
                 </div>
                 <div className='cart-container'>
                     <h2>This is Cart section</h2>
