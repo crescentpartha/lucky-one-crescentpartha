@@ -2,6 +2,9 @@
     background-color: #9e42f5;
     padding: 15px;
     margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .header h1 {

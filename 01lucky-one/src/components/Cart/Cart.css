@@ -1,0 +1,28 @@
+.cart {
+    position: sticky;
+    top: 160px;
+}
+
+.cart .choose-one, .choose-again {
+    background-color: #ffe5c4;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: orangered;
+} 
+
+.choose-again {
+    color: mediumturquoise;
+}
+
+.cart .choose-one:hover, .choose-again:hover {
+    border: none;
+    background-color: #FF5733;
+    color: whitesmoke;
+}
+

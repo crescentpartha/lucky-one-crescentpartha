@@ -18,7 +18,7 @@
     margin-top: 0;
 }
 
-button {
+.product button {
     position: absolute;
     bottom: 0; 
     width: 100%;
@@ -31,16 +31,16 @@ button {
     color: #5c5cff;
 }
 
-button p {
+.product button p {
     margin-right: 5px;
 }
 
-button:hover {
+.product button:hover {
     background-color: orange;
     color: whitesmoke;
 }
 
-button p {
+.product button p {
     font-size: large;
 }
 
