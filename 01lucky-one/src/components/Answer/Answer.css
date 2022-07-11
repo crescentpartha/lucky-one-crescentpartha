@@ -1,0 +1,26 @@
+.questions {
+    background-color: antiquewhite;
+    margin: 5% 8%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.question {
+    text-align: left;
+    text-align: justify;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+.question table {
+    border: 1px solid salmon;
+    border-collapse: collapse;
+}
+
+.question table tr td,th {
+    padding: 10px;
+}
+
+.question table tr th {
+    text-align: center;
+}

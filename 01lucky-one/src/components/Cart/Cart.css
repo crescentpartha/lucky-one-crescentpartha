@@ -1,6 +1,7 @@
 .cart {
     position: sticky;
     top: 160px;
+    margin-bottom: 30px;
 }
 
 .cart .choose-one, .choose-again {
