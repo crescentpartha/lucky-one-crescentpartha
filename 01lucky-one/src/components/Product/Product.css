@@ -28,6 +28,11 @@ button {
     border: none;
     border-radius: 15px;
     font-weight: bold;
+    color: #5c5cff;
+}
+
+button p {
+    margin-right: 5px;
 }
 
 button:hover {
