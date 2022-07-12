@@ -16,8 +16,12 @@ const Shops = () => {
         .then(data => setProducts(data));
     }, [])
 
+    const chooseAgain = () => {
+        let chooseCart = [];
+        setCart(chooseCart); 
+    }
+
     let newCart = [];
-    
     // console.log(cart);
     const handleToAddCart = (product) => {
         console.log(cart.length);
@@ -75,7 +79,10 @@ const Shops = () => {
                     }
                 </div>
                 <div className='cart-container'>
-                    <Cart cart={cart}></Cart>
+                    <Cart 
+                    cart={cart}
+                    chooseAgain={chooseAgain}
+                    ></Cart>
                 </div>
             </div>
             <Answer></Answer>

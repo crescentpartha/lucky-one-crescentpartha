@@ -11,7 +11,7 @@ const Cart = (props) => {
                 props.cart.map(item => <Item carts={item}></Item>)
             }
             <button className='choose-one'>CHOOSE 1 FOR ME</button>
-            <button className='choose-again'>CHOOSE AGAIN</button>
+            <button onClick={() => props.chooseAgain()} className='choose-again'>CHOOSE AGAIN</button>
         </div>
     );
 };
