@@ -17,7 +17,10 @@ const Shops = () => {
     }, [])
 
     const selectedItemDelete = (props) => {
-        console.log(props);
+        // console.log(props);
+        let rest = cart.filter(one => one.id !== props.id);
+        // console.log(rest);
+        setCart(rest);
     }
 
     const chooseOne = () => {
@@ -32,9 +35,6 @@ const Shops = () => {
                 alert(`You should bye → "${one.name}" item.`);
             }
         }
-        // let rest = cart.filter(one => one.id !== randomItem);
-        // console.log(rest);
-        // setCart(rest);
     }
 
     const chooseAgain = () => {
