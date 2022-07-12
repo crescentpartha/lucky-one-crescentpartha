@@ -16,6 +16,27 @@ const Shops = () => {
         .then(data => setProducts(data));
     }, [])
 
+    const selectedItemDelete = (props) => {
+        console.log(props);
+    }
+
+    const chooseOne = () => {
+        // console.log(cart);
+        let choose = [];
+        cart.map(one => choose.push(one.id));
+        // console.log(choose);
+        let randomItem = choose[Math.floor(Math.random()*choose.length)];
+        // console.log(randomItem);
+        for (const one of cart) {
+            if (one.id === randomItem){
+                alert(`You should bye → "${one.name}" item.`);
+            }
+        }
+        // let rest = cart.filter(one => one.id !== randomItem);
+        // console.log(rest);
+        // setCart(rest);
+    }
+
     const chooseAgain = () => {
         let chooseCart = [];
         setCart(chooseCart); 
@@ -24,7 +45,7 @@ const Shops = () => {
     let newCart = [];
     // console.log(cart);
     const handleToAddCart = (product) => {
-        console.log(cart.length);
+        // console.log(cart.length);
 
         if (cart.length < 4) {
             if (cart) {
@@ -63,7 +84,7 @@ const Shops = () => {
         //     setCart(newCart);
         // }
     }
-    console.log(cart);
+    // console.log(cart);
 
     return (
         <div>
@@ -82,6 +103,8 @@ const Shops = () => {
                     <Cart 
                     cart={cart}
                     chooseAgain={chooseAgain}
+                    chooseOne={chooseOne}
+                    selectedItemDelete={selectedItemDelete}
                     ></Cart>
                 </div>
             </div>

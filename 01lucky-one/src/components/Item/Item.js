@@ -10,6 +10,7 @@ const Item = (props) => {
         <div className='selected-cart'>
             <img src={picture} alt="" />
             <p>{name}</p>
+            {/* <FontAwesomeIcon onClick={() => selectedItemDelete(props.carts)} className='selected-cart-icon' icon={faTrash}></FontAwesomeIcon> */}
             <FontAwesomeIcon className='selected-cart-icon' icon={faTrash}></FontAwesomeIcon>
         </div>
     );
