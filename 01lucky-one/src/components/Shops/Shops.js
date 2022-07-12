@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Answer from '../Answer/Answer';
 import Cart from '../Cart/Cart';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Product from '../Product/Product';
 import './Shops.css';
@@ -31,6 +32,7 @@ const Shops = () => {
                 </div>
             </div>
             <Answer></Answer>
+            <Footer></Footer>
         </div>
     );
 };
