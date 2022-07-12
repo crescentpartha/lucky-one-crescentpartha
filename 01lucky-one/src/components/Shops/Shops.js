@@ -16,12 +16,25 @@ const Shops = () => {
         .then(data => setProducts(data));
     }, [])
 
+    let newCart = [];
+    
+    // console.log(cart);
     const handleToAddCart = (product) => {
         // console.log(product);
-        setCart(product);
+        // setCart(product);
         // const newCart = [...carts, product];
         // console.log(setCarts);
         // console.log(newCart);
+
+        if (newCart) {
+            newCart = [...cart, product];
+            setCart(newCart);
+        }
+        else {
+            newCart = [product];
+            setCart(newCart);
+        }
+
     }
 
     return (

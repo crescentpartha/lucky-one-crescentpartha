@@ -34,32 +34,3 @@
     background-color: orange;
     color: whitesmoke;
 }
-
-.selected-cart {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    border-left: 3px solid #fa8686;
-    margin-left: 10%;
-    padding: 0px;
-}
-
-.selected-cart img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 5px;
-    margin-right: 10px;
-    margin-left: 5px;
-    background-color: #eceaea;
-}
-
-.selected-cart p {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.selected-cart .selected-cart-icon {
-    font-size: 1.5em;
-    margin-left: 10px;
-}
