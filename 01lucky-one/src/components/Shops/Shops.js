@@ -16,6 +16,7 @@ const Shops = () => {
         .then(data => setProducts(data));
     }, [])
 
+    // Delete any selected items from the cart, as a wish of user by clicking the trash button.
     const selectedItemDelete = (props) => {
         // console.log(props);
         let rest = cart.filter(one => one.id !== props.id);
@@ -23,6 +24,7 @@ const Shops = () => {
         setCart(rest);
     }
 
+    // Choose only one items randomly for the Recommendation of user
     const chooseOne = () => {
         // console.log(cart);
         let choose = [];
@@ -37,11 +39,13 @@ const Shops = () => {
         }
     }
 
+    // clear all the selected items from the cart
     const chooseAgain = () => {
         let chooseCart = [];
         setCart(chooseCart); 
     }
 
+    // Adding selected items in the cart
     let newCart = [];
     // console.log(cart);
     const handleToAddCart = (product) => {
@@ -75,6 +79,7 @@ const Shops = () => {
             alert("You already select 4 table items.");
         }
 
+        // Adding same & different selected item in the cart multiple times.
         // if (newCart) {
         //     newCart = [...cart, product];
         //     setCart(newCart);

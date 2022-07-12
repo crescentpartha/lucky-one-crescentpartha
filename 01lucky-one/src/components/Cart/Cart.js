@@ -9,7 +9,7 @@ const Cart = (props) => {
         <div className='cart'>
             <h2>Selected Tables</h2>
             {
-                props.cart.map(item => <Item 
+                props.cart.map(item => <Item
                     carts={item}
                     selectedItemDelete={props.selectedItemDelete}
                     ></Item>)
