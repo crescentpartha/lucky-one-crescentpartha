@@ -20,22 +20,46 @@ const Shops = () => {
     
     // console.log(cart);
     const handleToAddCart = (product) => {
-        // console.log(product);
-        // setCart(product);
-        // const newCart = [...carts, product];
-        // console.log(setCarts);
-        // console.log(newCart);
+        console.log(cart.length);
 
-        if (newCart) {
-            newCart = [...cart, product];
-            setCart(newCart);
+        if (cart.length < 4) {
+            if (cart) {
+                let count = 0;
+                for (const item of cart) {
+                    if (item.id === product.id) {
+                        count = 1;
+                        break;
+                    }
+                }
+                if(count === 0){
+                    newCart = [...cart, product];
+                    setCart(newCart);
+                }
+                else {
+                    newCart = [...cart];
+                    setCart(newCart);
+                    alert("This table item is already selected");
+                }
+            }
+            else {
+                newCart = [product];
+                setCart(newCart);
+            }
         }
         else {
-            newCart = [product];
-            setCart(newCart);
+            alert("You already select 4 table items.");
         }
 
+        // if (newCart) {
+        //     newCart = [...cart, product];
+        //     setCart(newCart);
+        // }
+        // else {
+        //     newCart = [product];
+        //     setCart(newCart);
+        // }
     }
+    console.log(cart);
 
     return (
         <div>
