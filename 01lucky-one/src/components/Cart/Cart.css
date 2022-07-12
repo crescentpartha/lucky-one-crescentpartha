@@ -34,3 +34,30 @@
     background-color: orange;
     color: whitesmoke;
 }
+
+@media screen and (max-width:900px) {
+    .cart .choose-one, .choose-again {
+        padding: 10px 15px;
+        margin: 15px;
+        font-size: 14px;
+        margin-left: 10%;
+    } 
+}
+
+@media screen and (max-width:800px) {
+    .cart .choose-one, .choose-again {
+        padding: 8px 12px;
+        margin: 15px;
+        font-size: 12px;
+        margin-left: 10%;
+    } 
+}
+
+@media screen and (max-width:600px) {
+    .cart .choose-one, .choose-again {
+        padding: 5px 10px;
+        margin: 8px;
+        font-size: 10px;
+        margin-left: 10%;
+    } 
+}
